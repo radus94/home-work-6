@@ -12,32 +12,32 @@
 <body>
     <form action="myform">
         <label for="name">Your Name(required)</label>
-        <input type="text" class="input_text">
+        <input type="text" class="input_text" id="name">
         <label for="email">Your Email(required)</label>
-        <input type="text" class="input_text">
-        <label for="checkbox">What's this all about?</label>
-        <div class="checks">
-            <label>
-                <input type="checkbox" value="1" name="checkboxes" class="radio"/>
+        <input type="text" class="input_text" id="email">
+        <span>What's this all about?</span>
+        <div class="checks" id="check_box">
+            <label for="say_hello">
+                <input type="checkbox" value="say" name="checkboxes" id="say_hello"/>
                 Say Hello
             </label>
-            <label>
-                <input type="checkbox" value="1" name="checkboxes" class="radio"/>
+            <label for="complain">
+                <input type="checkbox" value="1" name="checkboxes" id="complain"/>
                 Complain
             </label>
-            <label>
-                <input type="checkbox" value="1" name="checkboxes" class="radio"/>
+            <label for="share">
+                <input type="checkbox" value="1" name="checkboxes" id="share"/>
                 Share a joke
             </label>
         </div>
-        <label for="subject">Subject</label>
-        <select name="select_subject" id="sub_seelct" >
+        <label for="sub_select">Subject</label>
+        <select name="select_subject" id="sub_select" >
             <option class="default" value="" hidden >Please select</option>
             <option value="subj1">Subject 1</option>
             <option value="subj2">Subject 2</option>
             <option value="subj3">Subject 3</option>
         </select>
-        <label for="message">Your message</label>
+        <label for="textarea">Your message</label>
         <textarea name="message_text" id="textarea" cols="30" rows="10"></textarea>
         <input class="submit" type="submit" value="Send">
     </form>
